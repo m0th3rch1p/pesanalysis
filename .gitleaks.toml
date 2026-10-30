@@ -1,0 +1,17 @@
+title = "Pesanalysis secret/PII scan"
+[extend]
+useDefault = true
+
+# Project-specific denylist lives outside the repo (real names, refs, account numbers from the
+# private corpus). Supply it as an untracked file: tools/export-public.sh reads it.
+[allowlist]
+description = "Generated/vendored content"
+paths = [
+  '''node_modules''',
+  '''apps/mobile/android/app/build''',
+  '''apps/mobile/qvac/worker.bundle.js''',
+  '''package-lock.json''',
+  '''docs/plan/_private''',
+  '''data/private''',
+  '''docs/legal''',
+]

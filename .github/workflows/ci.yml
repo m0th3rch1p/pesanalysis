@@ -1,0 +1,57 @@
+name: ci
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24.9.0"
+          cache: npm
+      - name: Install (lifecycle scripts disabled)
+        run: npm ci --ignore-scripts
+      - name: Core tests
+        run: npm test
+      - name: Core typecheck
+        run: npx tsc --noEmit -p packages/core
+      - name: Mobile typecheck
+        working-directory: apps/mobile
+        run: npx tsc --noEmit
+
+  licences-and-secrets:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }
+      - uses: actions/setup-node@v4
+        with: { node-version: "24.9.0" }
+      - name: Dependency licences
+        run: npx --yes license-checker-rseidelsohn --summary --failOn "GPL;AGPL;SSPL;BUSL" || true
+      - name: SBOM
+        run: npx --yes @cyclonedx/cyclonedx-npm --output-file sbom.cdx.json
+      - uses: actions/upload-artifact@v4
+        with: { name: sbom, path: sbom.cdx.json }
+      - name: Secret scan
+        uses: gitleaks/gitleaks-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  android:
+    if: github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: "24.9.0", cache: npm }
+      - uses: actions/setup-java@v4
+        with: { distribution: temurin, java-version: "21" }
+      - name: Install
+        run: npm ci --ignore-scripts
+      - name: Build (unsigned)
+        working-directory: apps/mobile/android
+        run: ./gradlew :app:createBundleReleaseJsAndAssets assembleRelease

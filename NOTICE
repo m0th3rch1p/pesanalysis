@@ -1,0 +1,51 @@
+Pesanalysis (codename Yako)
+Copyright (C) 2026 the Pesanalysis authors
+
+This project is licensed under the GNU Affero General Public License v3.0
+(see LICENSE). The following third-party components and models are used and
+retain their own licences. This file is a summary; the authoritative texts are
+in each package and model card.
+
+RUNTIME LIBRARIES (shipped in the Android app)
+- QVAC SDK and native addons (@qvac/*), Apache-2.0, Tether Data S.A. de C.V.
+  https://github.com/tetherto/qvac
+  Includes GGML/llama.cpp components (MIT) and their respective notices.
+- React Native, Expo, and Expo modules, MIT (Meta Platforms, Inc. / 650 Industries, Inc.)
+- @maplibre/maplibre-react-native and MapLibre Native, BSD-2-Clause / BSD-3-Clause;
+  map data (c) OpenStreetMap contributors, ODbL 1.0; tiles by the configured provider
+  (OpenFreeMap by default) under their terms.
+- expo-sqlite with SQLCipher (Zetetic LLC, BSD-style) — database encryption.
+- @noble/ciphers, @noble/hashes, MIT (Paul Miller).
+- d3-array, d3-scale, d3-shape, ISC (Mike Bostock).
+- react-native-svg, MIT. react-native-safe-area-context, MIT.
+- Other JavaScript dependencies: see package-lock.json; each package carries its
+  own licence. Notable non-MIT build-time components:
+  * lightningcss — MPL-2.0 (build tool; not linked into the shipped bundle)
+  * caniuse-lite — CC-BY-4.0 (data)
+  * node-forge — BSD-3-Clause OR GPL-2.0 (dual; used under BSD-3-Clause)
+
+MODELS (downloaded on device or staged at demo time; not part of the source licence)
+- Qwen3-0.6B (Qwen team, Alibaba Cloud), Apache-2.0. Used for offline narration
+  and constrained field extraction.
+- Laya multilingual 322M and Laya typed-decisions 421M (Convai Innovations),
+  Apache-2.0. Used as a local classifier. Model card notes: shipped uncalibrated
+  and over-confident; weak on some low-resource languages (Swahili 0.210 on
+  MASSIVE); `noul` can under-report true. We therefore use two-option `choice`
+  questions and never let the model's answer alone change the ledger.
+- TranslatePsy-AfriSLM 0.8B (Tether AI Research), Apache-2.0. Used only to
+  translate explanation text between English and Swahili, with numbers and
+  entities masked before translation and verified afterwards. The model card
+  states it is not validated for high-stakes or financial use; the app therefore
+  never uses it for amounts, decisions, or advice.
+- EasyOCR latin_g2 (Apache-2.0 upstream) and CRAFT detector (MIT upstream),
+  converted to GGML by QVAC. Used only to read receipt photos on the phone.
+- TiRex-2 is NOT bundled. If added later, its licence and weights must be
+  recorded here before shipping.
+
+DATA
+- Kenyan public-holiday dates: compiled from public sources; provenance and
+  verification status are recorded in packages/core/src/expect/holidays-ke.ts.
+- Tariff tables: compiled from published Safaricom / M-PESA rate pages with
+  retrieval dates in packages/core/src/tariffs/data/*.ts.
+- No user data, customer data, or third-party private messages are included in
+  this repository.

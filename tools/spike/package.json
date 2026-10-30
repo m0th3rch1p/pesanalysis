@@ -1,0 +1,12 @@
+{
+  "name": "yako-spike",
+  "private": true,
+  "type": "module",
+  "description": "Day-0 desktop spikes. Separate package so the heavy QVAC native deps don't bloat the core workspace.",
+  "engines": { "node": "^22.21.0 || >=24.9.0" },
+  "scripts": {
+    "swahili": "node swahili-afrislm.mjs",
+    "bench": "node llm-extract-bench.mjs"
+  },
+  "dependencies": { "@qvac/sdk": "^0.22.0" }
+}

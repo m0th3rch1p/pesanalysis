@@ -1,0 +1,115 @@
+{"q": "How much did I spend this month?", "measure": "spend", "time": {"kind": "named", "name": "this_month"}}
+{"q": "What did I spend last month?", "measure": "spend", "time": {"kind": "named", "name": "last_month"}}
+{"q": "How much did I spend this week?", "measure": "spend", "time": {"kind": "named", "name": "this_week"}}
+{"q": "How much did I spend yesterday?", "measure": "spend", "time": {"kind": "named", "name": "yesterday"}}
+{"q": "How much did I spend today?", "measure": "spend", "time": {"kind": "named", "name": "today"}}
+{"q": "What is my total spending this month?", "measure": "spend", "time": {"kind": "named", "name": "this_month"}}
+{"q": "How much money went out this month?", "measure": "spend", "time": {"kind": "named", "name": "this_month"}}
+{"q": "Show my spending for last month", "measure": "spend", "time": {"kind": "named", "name": "last_month"}}
+{"q": "How much have I paid this month?", "measure": "spend", "time": {"kind": "named", "name": "this_month"}}
+{"q": "How much did I pay out this week?", "measure": "spend", "time": {"kind": "named", "name": "this_week"}}
+{"q": "What did I buy this month?", "measure": "spend", "time": {"kind": "named", "name": "this_month"}}
+{"q": "How much did I burn this month?", "measure": "spend", "time": {"kind": "named", "name": "this_month"}}
+{"q": "How much do I blow each month?", "measure": "spend", "time": {"kind": "named", "name": "this_month"}}
+{"q": "What are my total expenses this month?", "measure": "spend", "time": {"kind": "named", "name": "this_month"}}
+{"q": "What did I spend over 1,000 this month?", "measure": "spend", "time": {"kind": "named", "name": "this_month"}, "minAmountCents": 100000}
+{"q": "Show spending between 500 and 2,000 this month", "measure": "spend", "time": {"kind": "named", "name": "this_month"}, "minAmountCents": 50000, "maxAmountCents": 200000}
+{"q": "Spending under 500 this month", "measure": "spend", "time": {"kind": "named", "name": "this_month"}, "maxAmountCents": 50000}
+{"q": "Spending above 10,000 last month", "measure": "spend", "time": {"kind": "named", "name": "last_month"}, "minAmountCents": 1000000}
+{"q": "How much did I receive this month?", "measure": "income", "time": {"kind": "named", "name": "this_month"}, "direction": "in"}
+{"q": "What income came in last month?", "measure": "income", "time": {"kind": "named", "name": "last_month"}, "direction": "in"}
+{"q": "How much money came in this week?", "measure": "income", "time": {"kind": "named", "name": "this_week"}, "direction": "in"}
+{"q": "What did I earn today?", "measure": "income", "time": {"kind": "named", "name": "today"}, "direction": "in"}
+{"q": "How many payments did I make yesterday?", "measure": "count", "time": {"kind": "named", "name": "yesterday"}}
+{"q": "Count my transactions this month", "measure": "count", "time": {"kind": "named", "name": "this_month"}}
+{"q": "What is my average payment this month?", "measure": "avg", "time": {"kind": "named", "name": "this_month"}}
+{"q": "What is my largest payment this month?", "measure": "max", "time": {"kind": "named", "name": "this_month"}}
+{"q": "What was my biggest spend last month?", "measure": "max", "time": {"kind": "named", "name": "last_month"}}
+{"q": "What are my fees this month?", "measure": "fees", "time": {"kind": "named", "name": "this_month"}, "direction": "out"}
+{"q": "How much did I pay in charges last month?", "measure": "fees", "time": {"kind": "named", "name": "last_month"}, "direction": "out"}
+{"q": "What is my net this month?", "measure": "net", "time": {"kind": "named", "name": "this_month"}}
+{"q": "How much did I spend on food this month?", "measure": "spend", "time": {"kind": "named", "name": "this_month"}, "labels": ["Eating out"]}
+{"q": "How much did I spend on groceries last month?", "measure": "spend", "time": {"kind": "named", "name": "last_month"}, "labels": ["Groceries"]}
+{"q": "How much did I spend on transport this week?", "measure": "spend", "time": {"kind": "named", "name": "this_week"}, "labels": ["Transport"]}
+{"q": "How much did I spend on fuel this month?", "measure": "spend", "time": {"kind": "named", "name": "this_month"}, "labels": ["Fuel"]}
+{"q": "How much did I pay for rent last month?", "measure": "spend", "time": {"kind": "named", "name": "last_month"}, "labels": ["Rent"]}
+{"q": "How much did I spend on airtime this month?", "measure": "spend", "time": {"kind": "named", "name": "this_month"}, "labels": ["Airtime & data"]}
+{"q": "How much did I spend on electricity last month?", "measure": "spend", "time": {"kind": "named", "name": "last_month"}, "labels": ["Utilities"]}
+{"q": "How much did I send to family this month?", "measure": "spend", "time": {"kind": "named", "name": "this_month"}, "labels": ["Family support"]}
+{"q": "How much did I spend on school fees this month?", "measure": "spend", "time": {"kind": "named", "name": "this_month"}, "labels": ["School fees"]}
+{"q": "How much did I spend on health this month?", "measure": "spend", "time": {"kind": "named", "name": "this_month"}, "labels": ["Health"]}
+{"q": "How much did I spend on entertainment last month?", "measure": "spend", "time": {"kind": "named", "name": "last_month"}, "labels": ["Entertainment"]}
+{"q": "How much did I put into savings this month?", "measure": "spend", "time": {"kind": "named", "name": "this_month"}, "labels": ["Savings & investment"]}
+{"q": "How much did I spend on cigarettes this month?", "measure": "spend", "time": {"kind": "named", "name": "this_month"}, "items": ["cigarette"]}
+{"q": "How many sigara did I buy this month?", "measure": "count_items", "time": {"kind": "named", "name": "this_month"}, "items": ["cigarette"]}
+{"q": "How much did I spend on bread this week?", "measure": "spend", "time": {"kind": "named", "name": "this_week"}, "items": ["bread"]}
+{"q": "How much did I spend on milk last month?", "measure": "spend", "time": {"kind": "named", "name": "last_month"}, "items": ["milk"]}
+{"q": "How much did I spend on sugar this month?", "measure": "spend", "time": {"kind": "named", "name": "this_month"}, "items": ["sugar"]}
+{"q": "How much did I spend on chapo this week?", "measure": "spend", "time": {"kind": "named", "name": "this_week"}, "items": ["chapo"]}
+{"q": "How much did I spend on snacks this month?", "measure": "spend", "time": {"kind": "named", "name": "this_month"}, "items": ["snack"]}
+{"q": "Show spending by item this month", "measure": "spend", "time": {"kind": "named", "name": "this_month"}, "group": "item"}
+{"q": "How am I doing on takeaway?", "measure": "spend", "habits": ["takeaway"]}
+{"q": "How much did I spend on the late-night food habit this month?", "measure": "spend", "time": {"kind": "named", "name": "this_month"}, "habits": ["late-night food"]}
+{"q": "Show my takeaway habit progress", "measure": "spend", "habits": ["takeaway"]}
+{"q": "What did Fuliza cost me this month?", "measure": "credit_cost", "time": {"kind": "named", "name": "this_month"}}
+{"q": "How much did Fuliza cost last month?", "measure": "credit_cost", "time": {"kind": "named", "name": "last_month"}}
+{"q": "What is the cost of Fuliza this week?", "measure": "credit_cost", "time": {"kind": "named", "name": "this_week"}}
+{"q": "How much did I buy on Fuliza this month?", "measure": "credit_share", "time": {"kind": "named", "name": "this_month"}}
+{"q": "What share of my spending was Fuliza this month?", "measure": "credit_share", "time": {"kind": "named", "name": "this_month"}}
+{"q": "What percentage of spending was credit-funded last month?", "measure": "credit_share", "time": {"kind": "named", "name": "last_month"}}
+{"q": "How much did I spend with credit this month?", "measure": "spend", "time": {"kind": "named", "name": "this_month"}, "funding": "credit"}
+{"q": "How much did I spend from my wallet this month?", "measure": "spend", "time": {"kind": "named", "name": "this_month"}, "funding": "wallet"}
+{"q": "How much did I spend on Fuliza at night this month?", "measure": "spend", "time": {"kind": "named", "name": "this_month"}, "funding": "credit", "hourWindow": {"startMin": 1320, "endMin": 300}}
+{"q": "How much of my groceries were on Fuliza this month?", "measure": "spend", "time": {"kind": "named", "name": "this_month"}, "labels": ["Groceries"], "funding": "credit"}
+{"q": "Show my spending by funding this month", "measure": "spend", "time": {"kind": "named", "name": "this_month"}, "group": "funding"}
+{"q": "What did I spend on my business this month?", "measure": "spend", "time": {"kind": "named", "name": "this_month"}, "labels": ["Sales (business)"]}
+{"q": "How much did I spend late night this month?", "measure": "spend", "time": {"kind": "named", "name": "this_month"}, "hourWindow": {"startMin": 1320, "endMin": 300}}
+{"q": "How much did I spend after 10pm this month?", "measure": "spend", "time": {"kind": "named", "name": "this_month"}, "hourWindow": {"startMin": 1320, "endMin": 1439}}
+{"q": "How much did I spend in the morning last month?", "measure": "spend", "time": {"kind": "named", "name": "last_month"}, "hourWindow": {"startMin": 300, "endMin": 720}}
+{"q": "How much did I spend in the afternoon this week?", "measure": "spend", "time": {"kind": "named", "name": "this_week"}, "hourWindow": {"startMin": 720, "endMin": 1020}}
+{"q": "How much did I spend in the evening yesterday?", "measure": "spend", "time": {"kind": "named", "name": "yesterday"}, "hourWindow": {"startMin": 1020, "endMin": 1320}}
+{"q": "How much did I spend on Friday this month?", "measure": "spend", "time": {"kind": "named", "name": "this_month"}, "weekdays": [5]}
+{"q": "How much did I spend on Sundays last month?", "measure": "spend", "time": {"kind": "named", "name": "last_month"}, "weekdays": [0]}
+{"q": "How much did I spend on Fridays and Saturdays this month?", "measure": "spend", "time": {"kind": "named", "name": "this_month"}, "weekdays": [5, 6]}
+{"q": "What did I spend by category this month?", "measure": "spend", "time": {"kind": "named", "name": "this_month"}, "group": "label"}
+{"q": "Who did I pay this month?", "measure": "spend", "time": {"kind": "named", "name": "this_month"}, "group": "counterparty"}
+{"q": "Show spending by merchant last month", "measure": "spend", "time": {"kind": "named", "name": "last_month"}, "group": "counterparty"}
+{"q": "Show spending by day this week", "measure": "spend", "time": {"kind": "named", "name": "this_week"}, "group": "day"}
+{"q": "Show spending by week this month", "measure": "spend", "time": {"kind": "named", "name": "this_month"}, "group": "week"}
+{"q": "Show spending by month this year", "measure": "spend", "time": {"kind": "named", "name": "this_year"}, "group": "month"}
+{"q": "Which days do I spend the most?", "measure": "spend", "group": "weekday"}
+{"q": "nimetumia pesa ngapi mwezi huu", "measure": "spend", "time": {"kind": "named", "name": "this_month"}}
+{"q": "nimetumia pesa ngapi kwa sigara mwezi huu", "measure": "spend", "time": {"kind": "named", "name": "this_month"}, "items": ["cigarette"]}
+{"q": "nimetumia ngapi kwa chakula wiki hii", "measure": "spend", "time": {"kind": "named", "name": "this_week"}, "labels": ["Eating out"]}
+{"q": "nimetumia pesa ngapi kwa usafiri mwezi uliopita", "measure": "spend", "time": {"kind": "named", "name": "last_month"}, "labels": ["Transport"]}
+{"q": "nimepokea pesa ngapi leo", "measure": "income", "time": {"kind": "named", "name": "today"}, "direction": "in"}
+{"q": "nimelipa gharama ngapi mwezi huu", "measure": "fees", "time": {"kind": "named", "name": "this_month"}, "direction": "out"}
+{"q": "gharama ya fuliza mwezi huu", "measure": "credit_cost", "time": {"kind": "named", "name": "this_month"}}
+{"q": "nimetumia pesa ngapi usiku mwezi huu", "measure": "spend", "time": {"kind": "named", "name": "this_month"}, "hourWindow": {"startMin": 1320, "endMin": 300}}
+{"q": "nimetumia pesa ngapi ijumaa mwezi huu", "measure": "spend", "time": {"kind": "named", "name": "this_month"}, "weekdays": [5]}
+{"q": "how much do i spend on smokes this month", "measure": "spend", "time": {"kind": "named", "name": "this_month"}, "items": ["cigarette"]}
+{"q": "how much did i spnd on food last month", "measure": "spend", "time": {"kind": "named", "name": "last_month"}, "labels": ["Eating out"]}
+{"q": "how much did i spend on grocries this month", "measure": "spend", "time": {"kind": "named", "name": "this_month"}, "labels": ["Groceries"]}
+{"q": "whats my fuliza damage this month", "measure": "credit_cost", "time": {"kind": "named", "name": "this_month"}}
+{"q": "how much do i blow at night", "measure": "spend", "hourWindow": {"startMin": 1320, "endMin": 300}}
+{"q": "nimetumia doh ngapi kwa fare mwezi huu", "measure": "spend", "time": {"kind": "named", "name": "this_month"}, "labels": ["Transport"]}
+{"q": "What is the weather today?", "ok": false}
+{"q": "Should I invest in Bitcoin?", "ok": false}
+{"q": "Who won the football match?", "ok": false}
+{"q": "Write me a poem", "ok": false}
+{"q": "What is my credit score?", "ok": false}
+{"q": "Tell me a joke", "ok": false}
+{"q": "How do I cook chapati?", "ok": false}
+{"q": "What is inflation?", "ok": false}
+{"q": "Can you book a taxi?", "ok": false}
+{"q": "What is the meaning of life?", "ok": false}
+{"q": "Is my spending under control?", "ok": false}
+{"q": "Should I spend less on food?", "ok": false}
+{"q": "Am I wasting money on takeaway?", "ok": false}
+{"q": "Did I overspend in October?", "ok": false}
+{"q": "Which month was my worst?", "ok": false}
+{"q": "How can I save more?", "ok": false}
+{"q": "Why is my money always finishing?", "ok": false}
+{"q": "What should I do about Fuliza?", "ok": false}
+{"q": "Pesa zangu zinaenda wapi?", "ok": false}
+{"q": "Nifanye nini kuhusu Fuliza?", "ok": false}

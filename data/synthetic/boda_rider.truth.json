@@ -1,0 +1,4410 @@
+{
+ "persona": "boda_rider",
+ "planted": [
+  {
+   "id": "pp-br-1",
+   "detector": "time_of_day",
+   "description": "Fuel till payments concentrate 06-09h",
+   "params": {
+    "peaks": [
+     [
+      6,
+      9
+     ]
+    ]
+   }
+  },
+  {
+   "id": "pp-br-2",
+   "detector": "periodic",
+   "description": "Fuel at the same till daily",
+   "params": {
+    "counterparty": "SHELL KIAMBU RD",
+    "periodHours": 24
+   }
+  },
+  {
+   "id": "pp-br-3",
+   "detector": "debt_cycle",
+   "description": "Weekly Fuliza draw (Mon) + auto-repay (Wed) loop",
+   "params": {
+    "counterparty": "fuliza",
+    "drawsPer4Weeks": 4
+   }
+  },
+  {
+   "id": "pp-br-4",
+   "detector": "fee_drag",
+   "description": "Fees: send fees + Fuliza recovery + withdrawal",
+   "params": {}
+  }
+ ],
+ "truth": [
+  {
+   "label": "Fuliza",
+   "scope": "business"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuel",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Cash withdrawal",
+   "scope": "business"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuel",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuel",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuliza",
+   "scope": "business"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuel",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuel",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Cash withdrawal",
+   "scope": "business"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuel",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuel",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuliza",
+   "scope": "business"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuel",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuel",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Cash withdrawal",
+   "scope": "business"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuel",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuliza",
+   "scope": "business"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuel",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuel",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuel",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Cash withdrawal",
+   "scope": "business"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Family support",
+   "scope": "personal",
+   "role": "family"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuel",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuliza",
+   "scope": "business"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuel",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuel",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuel",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Cash withdrawal",
+   "scope": "business"
+  },
+  {
+   "label": "Fuliza",
+   "scope": "business"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuel",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuel",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuel",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuel",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Cash withdrawal",
+   "scope": "business"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuliza",
+   "scope": "business"
+  },
+  {
+   "label": "Fuel",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuel",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuel",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuliza",
+   "scope": "business"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuel",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Cash withdrawal",
+   "scope": "business"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuel",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuel",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuel",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuliza",
+   "scope": "business"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuel",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Cash withdrawal",
+   "scope": "business"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuel",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuel",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuliza",
+   "scope": "business"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuel",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuel",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Cash withdrawal",
+   "scope": "business"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuel",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuel",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuliza",
+   "scope": "business"
+  },
+  {
+   "label": "Fuel",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuel",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Cash withdrawal",
+   "scope": "business"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuel",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuliza",
+   "scope": "business"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuel",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuel",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuel",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Cash withdrawal",
+   "scope": "business"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuel",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuliza",
+   "scope": "business"
+  },
+  {
+   "label": "Fuel",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Family support",
+   "scope": "personal",
+   "role": "family"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuel",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuel",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Cash withdrawal",
+   "scope": "business"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuliza",
+   "scope": "business"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuel",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuel",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuel",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuel",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Cash withdrawal",
+   "scope": "business"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuliza",
+   "scope": "business"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuel",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuel",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuel",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuliza",
+   "scope": "business"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuel",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Cash withdrawal",
+   "scope": "business"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuel",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuel",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuel",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuliza",
+   "scope": "business"
+  },
+  {
+   "label": "Fuel",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Cash withdrawal",
+   "scope": "business"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuel",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuel",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuliza",
+   "scope": "business"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuel",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuel",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Cash withdrawal",
+   "scope": "business"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuel",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuel",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuliza",
+   "scope": "business"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuel",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuel",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Cash withdrawal",
+   "scope": "business"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuel",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Fuliza",
+   "scope": "business"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuel",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuel",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuel",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Cash withdrawal",
+   "scope": "business"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuel",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuliza",
+   "scope": "business"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuel",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuel",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuel",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Cash withdrawal",
+   "scope": "business"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuliza",
+   "scope": "business"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Family support",
+   "scope": "personal",
+   "role": "family"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuel",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuel",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuel",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuel",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Cash withdrawal",
+   "scope": "business"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuliza",
+   "scope": "business"
+  },
+  {
+   "label": "Fuel",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuel",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuel",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuliza",
+   "scope": "business"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuel",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Cash withdrawal",
+   "scope": "business"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuel",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuel",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuel",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuliza",
+   "scope": "business"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuel",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Cash withdrawal",
+   "scope": "business"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuel",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuel",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuliza",
+   "scope": "business"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuel",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuel",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Cash withdrawal",
+   "scope": "business"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fuel",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Fares (business)",
+   "scope": "business",
+   "role": "customer"
+  }
+ ]
+}

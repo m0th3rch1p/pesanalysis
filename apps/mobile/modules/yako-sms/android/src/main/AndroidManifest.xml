@@ -1,0 +1,21 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+  <uses-permission android:name="android.permission.READ_SMS" />
+  <uses-permission android:name="android.permission.RECEIVE_SMS" />
+  <uses-permission android:name="android.permission.WAKE_LOCK" />
+  <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+  <uses-permission android:name="android.permission.FOREGROUND_SERVICE_LOCATION" />
+  <application>
+    <!-- Exported only to holders of BROADCAST_SMS (the telephony stack): no other app can forge a
+         message into the ledger (D88). The adb debug path lives in src/debug as DebugSmsReceiver. -->
+    <receiver android:name="expo.modules.yakosms.SmsReceiver" android:exported="true"
+              android:permission="android.permission.BROADCAST_SMS">
+      <intent-filter android:priority="999">
+        <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+      </intent-filter>
+    </receiver>
+    <service android:name="expo.modules.yakosms.YakoSmsTaskService" android:exported="false"
+             android:foregroundServiceType="shortService" />
+    <service android:name="expo.modules.yakosms.LocationFixService" android:exported="false"
+             android:foregroundServiceType="location" />
+  </application>
+</manifest>

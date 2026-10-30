@@ -1,0 +1,6611 @@
+{
+ "persona": "mama_mboga",
+ "planted": [
+  {
+   "id": "pp-mm-1",
+   "detector": "amount_multiples",
+   "description": "Incoming P2P amounts are multiples of KES 50 (price points 50/100/150)",
+   "params": {
+    "base": 50,
+    "direction": "in"
+   }
+  },
+  {
+   "id": "pp-mm-2",
+   "detector": "time_of_day",
+   "description": "Sales concentrate 06-09h and 16-19h",
+   "params": {
+    "peaks": [
+     [
+      6,
+      9
+     ],
+     [
+      16,
+      19
+     ]
+    ]
+   }
+  },
+  {
+   "id": "pp-mm-3",
+   "detector": "periodic",
+   "description": "Wholesale till payment daily ~05h",
+   "params": {
+    "counterparty": "GIKOMBA WHOLESALERS",
+    "periodHours": 24
+   }
+  },
+  {
+   "id": "pp-mm-4",
+   "detector": "periodic",
+   "description": "Rent paybill every Monday",
+   "params": {
+    "counterparty": "LANDLORD KAMAU PAYBILL",
+    "periodDays": 7
+   }
+  },
+  {
+   "id": "pp-mm-5",
+   "detector": "scope_mix",
+   "description": "Family transfers (personal) paid from the business wallet",
+   "params": {
+    "label": "Family support"
+   }
+  },
+  {
+   "id": "pp-mm-6",
+   "detector": "balance_break",
+   "description": "One KES 300 unexplained balance drop before the final message",
+   "params": {
+    "discrepancyKes": 300
+   }
+  }
+ ],
+ "truth": [
+  {
+   "label": "Stock (business)",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Airtime",
+   "scope": "mixed"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Rent (stall)",
+   "scope": "business",
+   "role": "landlord"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Stock (business)",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Stock (business)",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Stock (business)",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Stock (business)",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Stock (business)",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Cash withdrawal",
+   "scope": "mixed"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Family support",
+   "scope": "personal",
+   "role": "family"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Stock (business)",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Stock (business)",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Rent (stall)",
+   "scope": "business",
+   "role": "landlord"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Stock (business)",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Stock (business)",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Stock (business)",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Airtime",
+   "scope": "mixed"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Stock (business)",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Stock (business)",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Family support",
+   "scope": "personal",
+   "role": "family"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Stock (business)",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Stock (business)",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Rent (stall)",
+   "scope": "business",
+   "role": "landlord"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Stock (business)",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Stock (business)",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Stock (business)",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Stock (business)",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Stock (business)",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Cash withdrawal",
+   "scope": "mixed"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Family support",
+   "scope": "personal",
+   "role": "family"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Stock (business)",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Airtime",
+   "scope": "mixed"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Stock (business)",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Rent (stall)",
+   "scope": "business",
+   "role": "landlord"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Stock (business)",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Stock (business)",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Stock (business)",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Stock (business)",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Stock (business)",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Family support",
+   "scope": "personal",
+   "role": "family"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Stock (business)",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Stock (business)",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Rent (stall)",
+   "scope": "business",
+   "role": "landlord"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Stock (business)",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Stock (business)",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Airtime",
+   "scope": "mixed"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Stock (business)",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Stock (business)",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Stock (business)",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Cash withdrawal",
+   "scope": "mixed"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Family support",
+   "scope": "personal",
+   "role": "family"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Stock (business)",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Stock (business)",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Rent (stall)",
+   "scope": "business",
+   "role": "landlord"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Stock (business)",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Stock (business)",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Stock (business)",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Stock (business)",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Stock (business)",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Airtime",
+   "scope": "mixed"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Family support",
+   "scope": "personal",
+   "role": "family"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Stock (business)",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Stock (business)",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Rent (stall)",
+   "scope": "business",
+   "role": "landlord"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Stock (business)",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Stock (business)",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Stock (business)",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Stock (business)",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Stock (business)",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Cash withdrawal",
+   "scope": "mixed"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Family support",
+   "scope": "personal",
+   "role": "family"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Stock (business)",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Stock (business)",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Rent (stall)",
+   "scope": "business",
+   "role": "landlord"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Stock (business)",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Airtime",
+   "scope": "mixed"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Stock (business)",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Stock (business)",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Stock (business)",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Stock (business)",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Family support",
+   "scope": "personal",
+   "role": "family"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Stock (business)",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Stock (business)",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Rent (stall)",
+   "scope": "business",
+   "role": "landlord"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Stock (business)",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Stock (business)",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Stock (business)",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Stock (business)",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Airtime",
+   "scope": "mixed"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Stock (business)",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Cash withdrawal",
+   "scope": "mixed"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Family support",
+   "scope": "personal",
+   "role": "family"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Stock (business)",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Stock (business)",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Rent (stall)",
+   "scope": "business",
+   "role": "landlord"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Stock (business)",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Stock (business)",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Stock (business)",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Stock (business)",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Stock (business)",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Family support",
+   "scope": "personal",
+   "role": "family"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Stock (business)",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Stock (business)",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Airtime",
+   "scope": "mixed"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Rent (stall)",
+   "scope": "business",
+   "role": "landlord"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Stock (business)",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Stock (business)",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Stock (business)",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Stock (business)",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Stock (business)",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Cash withdrawal",
+   "scope": "mixed"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Family support",
+   "scope": "personal",
+   "role": "family"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Stock (business)",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Stock (business)",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Rent (stall)",
+   "scope": "business",
+   "role": "landlord"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Stock (business)",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Stock (business)",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Stock (business)",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Airtime",
+   "scope": "mixed"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Stock (business)",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Stock (business)",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Family support",
+   "scope": "personal",
+   "role": "family"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Stock (business)",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Stock (business)",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Rent (stall)",
+   "scope": "business",
+   "role": "landlord"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Stock (business)",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Stock (business)",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Stock (business)",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Stock (business)",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Stock (business)",
+   "scope": "business",
+   "role": "supplier"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Cash withdrawal",
+   "scope": "mixed"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Family support",
+   "scope": "personal",
+   "role": "family"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  },
+  {
+   "label": "Sales (business)",
+   "scope": "business",
+   "role": "customer"
+  }
+ ]
+}

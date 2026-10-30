@@ -1,0 +1,619 @@
+{
+  "format": "pesanalysis-parser-insights-v1",
+  "generatedAt": "2026-10-27T00:55:32.241Z",
+  "privacy": "Aggregate only. No SMS bodies, names, phone numbers, amounts, dates or account numbers. Generated from a local corpus; the corpus is not included.",
+  "corpus": {
+    "messages": 1119,
+    "parsed": 484,
+    "skipped": 623,
+    "notFinancial": 12,
+    "noMatch": 0,
+    "parseRatePct": 43.3
+  },
+  "senders": [
+    {
+      "provider": "mpesa",
+      "count": 425,
+      "financialPct": 100,
+      "providers": {
+        "mpesa": 425
+      }
+    },
+    {
+      "provider": "telco",
+      "count": 376,
+      "financialPct": 100,
+      "providers": {
+        "telco": 376
+      }
+    },
+    {
+      "provider": "airtel_money",
+      "count": 264,
+      "financialPct": 100,
+      "providers": {
+        "airtel_money": 264
+      }
+    },
+    {
+      "provider": "lender",
+      "count": 26,
+      "financialPct": 100,
+      "providers": {
+        "lender": 26
+      }
+    },
+    {
+      "provider": "non_financial",
+      "count": 12,
+      "financialPct": 0,
+      "providers": {
+        "unknown": 12
+      }
+    },
+    {
+      "provider": "bank",
+      "count": 8,
+      "financialPct": 100,
+      "providers": {
+        "bank": 8
+      }
+    },
+    {
+      "provider": "platform",
+      "count": 8,
+      "financialPct": 100,
+      "providers": {
+        "platform": 8
+      }
+    }
+  ],
+  "templates": [
+    {
+      "template": "mpesa.till",
+      "provider": "mpesa",
+      "count": 134,
+      "directions": {
+        "out": 134
+      },
+      "kinds": {
+        "till": 134
+      },
+      "fee": 134,
+      "balance": 134,
+      "ref": 134,
+      "counterparty": 134,
+      "account": 0,
+      "creditLimit": 0,
+      "availableCredit": 0,
+      "outstanding": 0,
+      "length": {
+        "160-319": 134
+      }
+    },
+    {
+      "template": "mpesa.fuliza_draw",
+      "provider": "mpesa",
+      "count": 85,
+      "directions": {
+        "neutral": 85
+      },
+      "kinds": {
+        "loan_draw": 85
+      },
+      "fee": 0,
+      "balance": 0,
+      "ref": 85,
+      "counterparty": 85,
+      "account": 0,
+      "creditLimit": 0,
+      "availableCredit": 0,
+      "outstanding": 85,
+      "length": {
+        "160-319": 85
+      }
+    },
+    {
+      "template": "mpesa.send",
+      "provider": "mpesa",
+      "count": 83,
+      "directions": {
+        "out": 83
+      },
+      "kinds": {
+        "send": 83
+      },
+      "fee": 83,
+      "balance": 83,
+      "ref": 83,
+      "counterparty": 83,
+      "account": 0,
+      "creditLimit": 0,
+      "availableCredit": 0,
+      "outstanding": 0,
+      "length": {
+        "160-319": 83
+      }
+    },
+    {
+      "template": "mpesa.paybill.sent",
+      "provider": "mpesa",
+      "count": 32,
+      "directions": {
+        "out": 32
+      },
+      "kinds": {
+        "paybill": 32
+      },
+      "fee": 32,
+      "balance": 32,
+      "ref": 32,
+      "counterparty": 32,
+      "account": 32,
+      "creditLimit": 0,
+      "availableCredit": 0,
+      "outstanding": 0,
+      "length": {
+        "160-319": 31,
+        "80-159": 1
+      }
+    },
+    {
+      "template": "mpesa.receive",
+      "provider": "mpesa",
+      "count": 32,
+      "directions": {
+        "in": 32
+      },
+      "kinds": {
+        "receive": 32
+      },
+      "fee": 0,
+      "balance": 32,
+      "ref": 32,
+      "counterparty": 32,
+      "account": 0,
+      "creditLimit": 0,
+      "availableCredit": 0,
+      "outstanding": 0,
+      "length": {
+        "160-319": 32
+      }
+    },
+    {
+      "template": "mpesa.fuliza_repay_full",
+      "provider": "mpesa",
+      "count": 26,
+      "directions": {
+        "out": 26
+      },
+      "kinds": {
+        "loan_repay": 26
+      },
+      "fee": 0,
+      "balance": 0,
+      "ref": 26,
+      "counterparty": 26,
+      "account": 0,
+      "creditLimit": 26,
+      "availableCredit": 26,
+      "outstanding": 0,
+      "length": {
+        "160-319": 26
+      }
+    },
+    {
+      "template": "telco.okoa_chapchap_draw",
+      "provider": "telco",
+      "count": 18,
+      "directions": {
+        "neutral": 18
+      },
+      "kinds": {
+        "loan_draw": 18
+      },
+      "fee": 0,
+      "balance": 0,
+      "ref": 0,
+      "counterparty": 18,
+      "account": 0,
+      "creditLimit": 0,
+      "availableCredit": 0,
+      "outstanding": 0,
+      "length": {
+        "80-159": 18
+      }
+    },
+    {
+      "template": "airtel.airtime.receive.v1",
+      "provider": "airtel_money",
+      "count": 17,
+      "directions": {
+        "in": 17
+      },
+      "kinds": {
+        "airtime": 17
+      },
+      "fee": 0,
+      "balance": 17,
+      "ref": 0,
+      "counterparty": 17,
+      "account": 0,
+      "creditLimit": 0,
+      "availableCredit": 0,
+      "outstanding": 0,
+      "length": {
+        "80-159": 17
+      }
+    },
+    {
+      "template": "telco.okoa_draw",
+      "provider": "telco",
+      "count": 11,
+      "directions": {
+        "neutral": 11
+      },
+      "kinds": {
+        "loan_draw": 11
+      },
+      "fee": 11,
+      "balance": 0,
+      "ref": 0,
+      "counterparty": 11,
+      "account": 0,
+      "creditLimit": 0,
+      "availableCredit": 0,
+      "outstanding": 0,
+      "length": {
+        "160-319": 11
+      }
+    },
+    {
+      "template": "telco.okoa_repay",
+      "provider": "telco",
+      "count": 8,
+      "directions": {
+        "out": 8
+      },
+      "kinds": {
+        "loan_repay": 8
+      },
+      "fee": 0,
+      "balance": 0,
+      "ref": 0,
+      "counterparty": 8,
+      "account": 0,
+      "creditLimit": 0,
+      "availableCredit": 0,
+      "outstanding": 0,
+      "length": {
+        "80-159": 8
+      }
+    },
+    {
+      "template": "airtel.send.v1",
+      "provider": "airtel_money",
+      "count": 7,
+      "directions": {
+        "out": 7
+      },
+      "kinds": {
+        "send": 7
+      },
+      "fee": 7,
+      "balance": 7,
+      "ref": 7,
+      "counterparty": 7,
+      "account": 0,
+      "creditLimit": 0,
+      "availableCredit": 0,
+      "outstanding": 0,
+      "length": {
+        "80-159": 7
+      }
+    },
+    {
+      "template": "airtel.kopa_repay.v1",
+      "provider": "airtel_money",
+      "count": 5,
+      "directions": {
+        "out": 5
+      },
+      "kinds": {
+        "loan_repay": 5
+      },
+      "fee": 0,
+      "balance": 0,
+      "ref": 0,
+      "counterparty": 0,
+      "account": 0,
+      "creditLimit": 0,
+      "availableCredit": 0,
+      "outstanding": 0,
+      "length": {
+        "80-159": 5
+      }
+    },
+    {
+      "template": "airtel.bundle.v1",
+      "provider": "airtel_money",
+      "count": 5,
+      "directions": {
+        "out": 5
+      },
+      "kinds": {
+        "bundle": 5
+      },
+      "fee": 3,
+      "balance": 5,
+      "ref": 0,
+      "counterparty": 0,
+      "account": 0,
+      "creditLimit": 0,
+      "availableCredit": 0,
+      "outstanding": 0,
+      "length": {
+        "80-159": 5
+      }
+    },
+    {
+      "template": "airtel.airtime_loan.v1",
+      "provider": "airtel_money",
+      "count": 4,
+      "directions": {
+        "neutral": 4
+      },
+      "kinds": {
+        "loan_draw": 4
+      },
+      "fee": 0,
+      "balance": 0,
+      "ref": 0,
+      "counterparty": 0,
+      "account": 0,
+      "creditLimit": 0,
+      "availableCredit": 0,
+      "outstanding": 0,
+      "length": {
+        "80-159": 4
+      }
+    },
+    {
+      "template": "airtel.receive.v1",
+      "provider": "airtel_money",
+      "count": 4,
+      "directions": {
+        "in": 4
+      },
+      "kinds": {
+        "receive": 4
+      },
+      "fee": 0,
+      "balance": 4,
+      "ref": 4,
+      "counterparty": 4,
+      "account": 0,
+      "creditLimit": 0,
+      "availableCredit": 0,
+      "outstanding": 0,
+      "length": {
+        "80-159": 4
+      }
+    },
+    {
+      "template": "mpesa.withdraw.glued",
+      "provider": "mpesa",
+      "count": 3,
+      "directions": {
+        "out": 3
+      },
+      "kinds": {
+        "withdraw": 3
+      },
+      "fee": 3,
+      "balance": 3,
+      "ref": 3,
+      "counterparty": 3,
+      "account": 0,
+      "creditLimit": 0,
+      "availableCredit": 0,
+      "outstanding": 0,
+      "length": {
+        "160-319": 2,
+        "320-639": 1
+      }
+    },
+    {
+      "template": "equity.till_received",
+      "provider": "bank",
+      "count": 2,
+      "directions": {
+        "in": 2
+      },
+      "kinds": {
+        "bank_credit": 2
+      },
+      "fee": 0,
+      "balance": 0,
+      "ref": 2,
+      "counterparty": 2,
+      "account": 0,
+      "creditLimit": 0,
+      "availableCredit": 0,
+      "outstanding": 0,
+      "length": {
+        "80-159": 2
+      }
+    },
+    {
+      "template": "equity.deposited",
+      "provider": "bank",
+      "count": 2,
+      "directions": {
+        "in": 2
+      },
+      "kinds": {
+        "bank_credit": 2
+      },
+      "fee": 0,
+      "balance": 0,
+      "ref": 2,
+      "counterparty": 0,
+      "account": 0,
+      "creditLimit": 0,
+      "availableCredit": 0,
+      "outstanding": 0,
+      "length": {
+        "160-319": 2
+      }
+    },
+    {
+      "template": "equity.sent_to_wallet",
+      "provider": "bank",
+      "count": 1,
+      "directions": {
+        "in": 1
+      },
+      "kinds": {
+        "bank_credit": 1
+      },
+      "fee": 0,
+      "balance": 0,
+      "ref": 1,
+      "counterparty": 1,
+      "account": 0,
+      "creditLimit": 0,
+      "availableCredit": 0,
+      "outstanding": 0,
+      "length": {
+        "80-159": 1
+      }
+    },
+    {
+      "template": "mpesa.deposit2",
+      "provider": "mpesa",
+      "count": 1,
+      "directions": {
+        "in": 1
+      },
+      "kinds": {
+        "deposit": 1
+      },
+      "fee": 0,
+      "balance": 1,
+      "ref": 1,
+      "counterparty": 1,
+      "account": 0,
+      "creditLimit": 0,
+      "availableCredit": 0,
+      "outstanding": 0,
+      "length": {
+        "160-319": 1
+      }
+    },
+    {
+      "template": "airtel.till.v1",
+      "provider": "airtel_money",
+      "count": 1,
+      "directions": {
+        "out": 1
+      },
+      "kinds": {
+        "till": 1
+      },
+      "fee": 1,
+      "balance": 1,
+      "ref": 1,
+      "counterparty": 1,
+      "account": 0,
+      "creditLimit": 0,
+      "availableCredit": 0,
+      "outstanding": 0,
+      "length": {
+        "80-159": 1
+      }
+    },
+    {
+      "template": "airtel.paybill.v1",
+      "provider": "airtel_money",
+      "count": 1,
+      "directions": {
+        "out": 1
+      },
+      "kinds": {
+        "paybill": 1
+      },
+      "fee": 1,
+      "balance": 1,
+      "ref": 1,
+      "counterparty": 1,
+      "account": 1,
+      "creditLimit": 0,
+      "availableCredit": 0,
+      "outstanding": 0,
+      "length": {
+        "80-159": 1
+      }
+    },
+    {
+      "template": "platform.payment_received",
+      "provider": "platform",
+      "count": 1,
+      "directions": {
+        "in": 1
+      },
+      "kinds": {
+        "receive": 1
+      },
+      "fee": 0,
+      "balance": 1,
+      "ref": 0,
+      "counterparty": 1,
+      "account": 0,
+      "creditLimit": 0,
+      "availableCredit": 0,
+      "outstanding": 0,
+      "length": {
+        "80-159": 1
+      }
+    },
+    {
+      "template": "mpesa.airtime",
+      "provider": "mpesa",
+      "count": 1,
+      "directions": {
+        "out": 1
+      },
+      "kinds": {
+        "airtime": 1
+      },
+      "fee": 1,
+      "balance": 1,
+      "ref": 1,
+      "counterparty": 0,
+      "account": 0,
+      "creditLimit": 0,
+      "availableCredit": 0,
+      "outstanding": 0,
+      "length": {
+        "160-319": 1
+      }
+    }
+  ],
+  "unparsedFingerprints": [],
+  "mpesa": {
+    "total": 397,
+    "balance": 286,
+    "fee": 253,
+    "ref": 397,
+    "counterparty": 396,
+    "fuliza": 111,
+    "fulizaLimit": 26,
+    "balancePct": 72,
+    "feePct": 63.7,
+    "refPct": 100,
+    "counterpartyPct": 99.7,
+    "fulizaPct": 28,
+    "fulizaLimitPct": 6.5
+  }
+}

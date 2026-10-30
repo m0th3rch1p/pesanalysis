@@ -1,0 +1,65 @@
+{
+  "name": "@yako/mobile",
+  "version": "0.0.0",
+  "main": "index.ts",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
+    "web": "expo start --web",
+    "prebuild:android": "expo prebuild --platform android",
+    "dev:android": "expo run:android --device",
+    "typecheck": "tsc --noEmit",
+    "doctor": "expo-doctor"
+  },
+  "dependencies": {
+    "@maplibre/maplibre-react-native": "11.5.0",
+    "@qvac/fabric-android-arm64": "0.22.0",
+    "@qvac/sdk": "0.22.0",
+    "@shopify/flash-list": "2.3.2",
+    "@yako/core": "*",
+    "d3-array": "^3.2.4",
+    "d3-scale": "^4.0.2",
+    "d3-shape": "^3.2.0",
+    "expo": "~58.0.21",
+    "expo-application": "~58.1.2",
+    "expo-audio": "~58.0.10",
+    "expo-build-properties": "~58.0.11",
+    "expo-calendar": "~58.0.6",
+    "expo-contacts": "~58.0.10",
+    "expo-document-picker": "~58.0.4",
+    "expo-file-system": "~58.0.12",
+    "expo-haptics": "~58.0.7",
+    "expo-image": "~58.0.18",
+    "expo-image-picker": "~58.0.10",
+    "expo-local-authentication": "~58.0.2",
+    "expo-location": "~58.0.20",
+    "expo-notifications": "~58.1.7",
+    "expo-secure-store": "~58.0.2",
+    "expo-sharing": "~58.0.21",
+    "expo-sqlite": "~58.0.14",
+    "expo-status-bar": "~58.0.4",
+    "expo-task-manager": "~58.0.12",
+    "expo-video": "~58.0.13",
+    "react": "^19.3.0",
+    "react-native": "0.88.1",
+    "react-native-bare-kit": "0.16.0",
+    "react-native-safe-area-context": "~5.10.1",
+    "react-native-svg": "15.16.0"
+  },
+  "devDependencies": {
+    "@types/d3-array": "^3.2.2",
+    "@types/d3-scale": "^4.0.9",
+    "@types/d3-shape": "^3.2.0",
+    "@types/react": "~19.3.0",
+    "typescript": "~6.0.3"
+  },
+  "private": true,
+  "expo": {
+    "install": {
+      "exclude": [
+        "react-native"
+      ]
+    }
+  }
+}

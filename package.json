@@ -1,0 +1,31 @@
+{
+  "name": "yako-monorepo",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Working codename: yako. On-device financial intelligence agent for Kenyan mobile money (AI Yako hackathon).",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "engines": {
+    "node": "^22.21.0 || >=24.9.0"
+  },
+  "scripts": {
+    "test": "npm test -w @yako/core",
+    "typecheck": "npm run typecheck -w @yako/core && npm run typecheck -w @yako/mobile",
+    "synth": "npm run synth -w @yako/core",
+    "coverage:private": "npm run coverage:private -w @yako/core",
+    "sms:export": "tsx tools/export-sms.ts",
+    "eval": "tsx tools/eval/run.ts",
+    "gold": "tsx tools/label/gold.ts",
+    "gold:migrate": "tsx tools/label/migrate-gold.ts",
+    "eval:planner": "tsx tools/eval/planner.ts",
+    "eval:ask": "tsx tools/eval/ask-heldout.ts",
+    "parser:insights": "tsx tools/parser-insights.ts"
+  },
+  "devDependencies": {
+    "tsx": "^4.23.0",
+    "typescript": "~5.9.2",
+    "@types/node": "^22.0.0"
+  }
+}

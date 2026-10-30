@@ -1,0 +1,47 @@
+node_modules/
+dist/
+.expo/
+ios/
+/apps/mobile/android/build/
+/apps/mobile/android/.gradle/
+/apps/mobile/android/.cxx/
+/apps/mobile/android/local.properties
+/apps/mobile/android/app/build/
+/apps/mobile/android/app/.cxx/
+/apps/mobile/android/app/debug.keystore
+/apps/mobile/android/keystore.properties
+*.keystore
+/apps/mobile/modules/*/android/build/
+*.apk
+*.aab
+*.aab
+.env
+.env.*
+!.env.example
+# PRIVATE DATA: real SMS, exports, gold labels. NEVER commit. NEVER put on video.
+data/private/*
+!data/private/.gitkeep
+# Model weights / QVAC cache
+models/
+.qvac/
+*.gguf
+# Keys
+*.pem
+*.key
+*_key
+id_rsa*
+keystore*
+*.jks
+.DS_Store
+hdd.md
+
+# privileged legal records and consent forms
+docs/legal/*
+!docs/legal/README.md
+
+# founder-derived audit evidence (never publish)
+docs/plan/_private/
+
+# private export inputs
+tools/private-denylist.txt
+tools/private-map.tsv

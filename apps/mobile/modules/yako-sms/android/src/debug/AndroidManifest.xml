@@ -1,0 +1,7 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+  <application>
+    <receiver android:name="expo.modules.yakosms.DebugSmsReceiver" android:exported="true">
+      <intent-filter><action android:name="dev.yako.app.DEBUG_SMS" /></intent-filter>
+    </receiver>
+  </application>
+</manifest>

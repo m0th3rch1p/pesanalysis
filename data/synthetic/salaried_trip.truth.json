@@ -1,0 +1,438 @@
+{
+ "persona": "salaried_trip",
+ "planted": [
+  {
+   "id": "pp-st-1",
+   "detector": "episodes",
+   "description": "Naivasha weekend: fuel x2 + lodge + meal + boat + fees bundle",
+   "params": {
+    "episode": "Naivasha weekend",
+    "txCount": 5
+   }
+  },
+  {
+   "id": "pp-st-2",
+   "detector": "periodic",
+   "description": "Salary on the 28th; rent on the 1st",
+   "params": {}
+  }
+ ],
+ "truth": [
+  {
+   "label": "Transport to work",
+   "scope": "personal"
+  },
+  {
+   "label": "Transport to work",
+   "scope": "personal"
+  },
+  {
+   "label": "Transport to work",
+   "scope": "personal"
+  },
+  {
+   "label": "Transport to work",
+   "scope": "personal"
+  },
+  {
+   "label": "Transport to work",
+   "scope": "personal"
+  },
+  {
+   "label": "Eating out",
+   "scope": "personal"
+  },
+  {
+   "label": "Groceries",
+   "scope": "personal"
+  },
+  {
+   "label": "Transport to work",
+   "scope": "personal"
+  },
+  {
+   "label": "Transport to work",
+   "scope": "personal"
+  },
+  {
+   "label": "Transport to work",
+   "scope": "personal"
+  },
+  {
+   "label": "Transport to work",
+   "scope": "personal"
+  },
+  {
+   "label": "Transport to work",
+   "scope": "personal"
+  },
+  {
+   "label": "Eating out",
+   "scope": "personal"
+  },
+  {
+   "label": "Groceries",
+   "scope": "personal"
+  },
+  {
+   "label": "Transport to work",
+   "scope": "personal"
+  },
+  {
+   "label": "Transport to work",
+   "scope": "personal"
+  },
+  {
+   "label": "Transport to work",
+   "scope": "personal"
+  },
+  {
+   "label": "Transport to work",
+   "scope": "personal"
+  },
+  {
+   "label": "Transport to work",
+   "scope": "personal"
+  },
+  {
+   "label": "Eating out",
+   "scope": "personal"
+  },
+  {
+   "label": "Groceries",
+   "scope": "personal"
+  },
+  {
+   "label": "Transport to work",
+   "scope": "personal"
+  },
+  {
+   "label": "Transport to work",
+   "scope": "personal"
+  },
+  {
+   "label": "Transport to work",
+   "scope": "personal"
+  },
+  {
+   "label": "Transport to work",
+   "scope": "personal"
+  },
+  {
+   "label": "Transport to work",
+   "scope": "personal"
+  },
+  {
+   "label": "Salary",
+   "scope": "personal",
+   "role": "employer"
+  },
+  {
+   "label": "Rent",
+   "scope": "personal",
+   "role": "landlord"
+  },
+  {
+   "label": "Eating out",
+   "scope": "personal"
+  },
+  {
+   "label": "Groceries",
+   "scope": "personal"
+  },
+  {
+   "label": "Transport to work",
+   "scope": "personal"
+  },
+  {
+   "label": "Transport to work",
+   "scope": "personal"
+  },
+  {
+   "label": "Transport to work",
+   "scope": "personal"
+  },
+  {
+   "label": "Transport to work",
+   "scope": "personal"
+  },
+  {
+   "label": "Transport to work",
+   "scope": "personal"
+  },
+  {
+   "label": "Eating out",
+   "scope": "personal"
+  },
+  {
+   "label": "Groceries",
+   "scope": "personal"
+  },
+  {
+   "label": "Transport to work",
+   "scope": "personal"
+  },
+  {
+   "label": "Transport to work",
+   "scope": "personal"
+  },
+  {
+   "label": "Transport to work",
+   "scope": "personal"
+  },
+  {
+   "label": "Transport to work",
+   "scope": "personal"
+  },
+  {
+   "label": "Transport to work",
+   "scope": "personal"
+  },
+  {
+   "label": "Fuel",
+   "scope": "personal",
+   "episode": "Naivasha weekend"
+  },
+  {
+   "label": "Accommodation",
+   "scope": "personal",
+   "episode": "Naivasha weekend"
+  },
+  {
+   "label": "Eating out",
+   "scope": "personal",
+   "episode": "Naivasha weekend"
+  },
+  {
+   "label": "Eating out",
+   "scope": "personal"
+  },
+  {
+   "label": "Boat ride (shared)",
+   "scope": "personal",
+   "episode": "Naivasha weekend",
+   "note": "paid on behalf of friend"
+  },
+  {
+   "label": "Groceries",
+   "scope": "personal"
+  },
+  {
+   "label": "Fuel",
+   "scope": "personal",
+   "episode": "Naivasha weekend"
+  },
+  {
+   "label": "Transport to work",
+   "scope": "personal"
+  },
+  {
+   "label": "Transport to work",
+   "scope": "personal"
+  },
+  {
+   "label": "Transport to work",
+   "scope": "personal"
+  },
+  {
+   "label": "Transport to work",
+   "scope": "personal"
+  },
+  {
+   "label": "Transport to work",
+   "scope": "personal"
+  },
+  {
+   "label": "Eating out",
+   "scope": "personal"
+  },
+  {
+   "label": "Groceries",
+   "scope": "personal"
+  },
+  {
+   "label": "Transport to work",
+   "scope": "personal"
+  },
+  {
+   "label": "Transport to work",
+   "scope": "personal"
+  },
+  {
+   "label": "Transport to work",
+   "scope": "personal"
+  },
+  {
+   "label": "Transport to work",
+   "scope": "personal"
+  },
+  {
+   "label": "Transport to work",
+   "scope": "personal"
+  },
+  {
+   "label": "Salary",
+   "scope": "personal",
+   "role": "employer"
+  },
+  {
+   "label": "Rent",
+   "scope": "personal",
+   "role": "landlord"
+  },
+  {
+   "label": "Eating out",
+   "scope": "personal"
+  },
+  {
+   "label": "Groceries",
+   "scope": "personal"
+  },
+  {
+   "label": "Transport to work",
+   "scope": "personal"
+  },
+  {
+   "label": "Transport to work",
+   "scope": "personal"
+  },
+  {
+   "label": "Transport to work",
+   "scope": "personal"
+  },
+  {
+   "label": "Transport to work",
+   "scope": "personal"
+  },
+  {
+   "label": "Transport to work",
+   "scope": "personal"
+  },
+  {
+   "label": "Eating out",
+   "scope": "personal"
+  },
+  {
+   "label": "Groceries",
+   "scope": "personal"
+  },
+  {
+   "label": "Transport to work",
+   "scope": "personal"
+  },
+  {
+   "label": "Transport to work",
+   "scope": "personal"
+  },
+  {
+   "label": "Transport to work",
+   "scope": "personal"
+  },
+  {
+   "label": "Transport to work",
+   "scope": "personal"
+  },
+  {
+   "label": "Transport to work",
+   "scope": "personal"
+  },
+  {
+   "label": "Eating out",
+   "scope": "personal"
+  },
+  {
+   "label": "Groceries",
+   "scope": "personal"
+  },
+  {
+   "label": "Transport to work",
+   "scope": "personal"
+  },
+  {
+   "label": "Transport to work",
+   "scope": "personal"
+  },
+  {
+   "label": "Transport to work",
+   "scope": "personal"
+  },
+  {
+   "label": "Transport to work",
+   "scope": "personal"
+  },
+  {
+   "label": "Transport to work",
+   "scope": "personal"
+  },
+  {
+   "label": "Eating out",
+   "scope": "personal"
+  },
+  {
+   "label": "Groceries",
+   "scope": "personal"
+  },
+  {
+   "label": "Transport to work",
+   "scope": "personal"
+  },
+  {
+   "label": "Transport to work",
+   "scope": "personal"
+  },
+  {
+   "label": "Transport to work",
+   "scope": "personal"
+  },
+  {
+   "label": "Transport to work",
+   "scope": "personal"
+  },
+  {
+   "label": "Transport to work",
+   "scope": "personal"
+  },
+  {
+   "label": "Salary",
+   "scope": "personal",
+   "role": "employer"
+  },
+  {
+   "label": "Rent",
+   "scope": "personal",
+   "role": "landlord"
+  },
+  {
+   "label": "Eating out",
+   "scope": "personal"
+  },
+  {
+   "label": "Groceries",
+   "scope": "personal"
+  },
+  {
+   "label": "Transport to work",
+   "scope": "personal"
+  },
+  {
+   "label": "Transport to work",
+   "scope": "personal"
+  },
+  {
+   "label": "Transport to work",
+   "scope": "personal"
+  },
+  {
+   "label": "Transport to work",
+   "scope": "personal"
+  },
+  {
+   "label": "Transport to work",
+   "scope": "personal"
+  },
+  {
+   "label": "Eating out",
+   "scope": "personal"
+  }
+ ]
+}

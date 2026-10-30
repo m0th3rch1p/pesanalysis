@@ -1,0 +1,9 @@
+--------- beginning of main
+Running "main"
+[startup] +94ms ledger open start
+[startup] +356ms ledger ready
+[lab] === suite layap params {"model":"laya_typed_421m","batch":"16","only":"fin0,fin3,fin6,dir0,dir2,cat0,cat2,loan0,loan3"} crash={"disabled":false,"crashes":0,"lastInFlight":null}
+[startup] +1950ms app db acquired
+[startup] +2009ms first feed query scheduled
+[startup] +5528ms nightly skipped
+[lab] loaded laya_typed_421m in 12890ms rss 233088->1372744 kB

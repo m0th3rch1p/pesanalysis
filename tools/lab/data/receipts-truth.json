@@ -1,0 +1,62 @@
+[
+ {
+  "id": "rcpt01",
+  "merchant": "SAMPLE SUPERMARKET WESTLANDS",
+  "date": "2026-03-11",
+  "total": 995.0
+ },
+ {
+  "id": "rcpt02",
+  "merchant": "MAMA MBOGA SAMPLE STALL",
+  "date": "2026-02-14",
+  "total": 180.0
+ },
+ {
+  "id": "rcpt03",
+  "merchant": "SAMPLE HARDWARE AND PAINTS",
+  "date": "2026-10-11",
+  "total": 3200.0
+ },
+ {
+  "id": "rcpt04",
+  "merchant": "SAMPLE PHARMACY CHEMIST",
+  "date": "2026-10-12",
+  "total": 960.0
+ },
+ {
+  "id": "rcpt05",
+  "merchant": "SAMPLE PETROL STATION KAREN",
+  "date": "2026-09-18",
+  "total": 2375.0
+ },
+ {
+  "id": "rcpt06",
+  "merchant": "SAMPLE FASHION BOUTIQUE",
+  "date": "2026-06-21",
+  "total": 2549.0
+ },
+ {
+  "id": "rcpt07",
+  "merchant": "SAMPLE BUTCHERY",
+  "date": "2026-09-16",
+  "total": 1750.0
+ },
+ {
+  "id": "rcpt08",
+  "merchant": "SAMPLE ELECTRONICS MART",
+  "date": "2026-07-21",
+  "total": 2750.0
+ },
+ {
+  "id": "rcpt09",
+  "merchant": "SAMPLE KFC-STYLE CHICKEN HUT",
+  "date": "2026-01-15",
+  "total": 900.0
+ },
+ {
+  "id": "rcpt10",
+  "merchant": "SAMPLE STATIONERS LTD",
+  "date": "2026-08-21",
+  "total": 2200.0
+ }
+]
